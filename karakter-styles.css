@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: black;
+}
+
+#nav {
+    background-color: white;
+    padding: 20px;
+}
+
+#nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+#nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#nav ul li a:hover {
+    color: maroon;
+    text-shadow: 2px 2px black;
+}
+
+#kru {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#kru p {
+    text-align: left;
+    margin: 50px 50px 50px 100px;
+    flex: 1;
+}
+
+#strawhat {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#crew {
+    padding: 30px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.karakter {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.karakter-gambar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.karakter2 {
+    background-color: black;
+    color: white;
+}
+
+.karakter-gambar2 {
+    background-color: black;
+}
+
+.karakter-item {
+    text-align: center;
+    margin: 50px;
+    transition: transform 1s ease;
+}
+
+.karakter-item img {
+    width: 125px;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 100px;
+}
+
+.karakter-item :hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.karakter-item span {
+    display: block;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #kru {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #kru p {
+        margin: 20px 10px;
+    }
+
+    #crew {
+        width: 80%;
+        max-width: none;
+    }
+
+    .karakter-item {
+        margin: 20px;
+    }
+
+    .karakter-item img {
+        width: 100px;
+    }
+
+    .karakter-item:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #kru {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #kru p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #crew {
+        width: 100%;
+    }
+
+    .karakter-item {
+        margin: 10px;
+    }
+
+    .karakter-item img {
+        width: 80px;
+    }
+
+    #strawhat {
+        font-size: 18px;
+    }
+
+    .karakter-item:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+}
